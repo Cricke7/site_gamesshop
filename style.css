@@ -1,0 +1,168 @@
+/*começamos com o reset de CSS para deixar tudo padronizado e depois ir ajustando tag por tag*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #24599e;
+    color: white;
+    padding: 5px 0;
+    text-align: left;
+    position: sticky; /*mantendo o header fixo no topo da página ao rolar para baixo*/
+    top: 0px;
+    box-shadow: 9px 20px 5px rgba(0, 0, 0, .1); /*adicionando sombra ao header*/
+    
+}
+
+/*aplicando as fontes do Google Fonts nos títulos h1 e h2*/
+header h1, 
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header nav li {
+    display: inline;/*ajustando os itens do menu de navegação para ficarem na horizontal*/
+    margin-left: 12px;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer; /*adicionando o cursor pointer para indicar que os itens são clicáveis*/
+}
+
+/*ajustando a cor dos links do menu de navegação*/
+header nav li a {
+display: inline;
+margin-left: 16px;
+font-size: 18px;
+text-decoration: none;
+color: white;
+font-family: 'Bungee', cursive;
+}
+
+/*ajustando o container para centralizar o conteúdo e limitar a largura máxima*/
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*usando flexbox para alinhar os itens do header e da seção*/
+header .container, section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+/*estilizando a lista de marcas parceiras*/
+.brands-list img {
+    height: 24px;
+}
+
+/*ajustando os itens da lista de marcas para ficarem na horizontal*/
+.brands-list li {
+    display: inline;
+}
+
+/*ajustando o alinhamento dos itens da seção para ficarem no início*/
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0; 
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: #24599e;
+}
+section p {
+    margin-bottom: 24px;
+}
+/*estilizando a vitrine de produtos*/
+.store-front {
+    margin-right: 32px;
+    box-shadow: 9px 20px 5px rgba(0, 0, 0, .1); /*adicionando sombra ao header*/
+    border-radius: 5px;
+}
+
+/*estilizando os cards dos produtos*/
+.social-links img {
+    height: 24px;
+}
+
+/*ajustando os itens da lista de redes sociais para ficarem na horizontal*/
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/*removendo o sublinhado dos links das redes sociais*/
+.social-links li a {
+    text-decoration: none;
+}
+
+/*estilizando a seção de contato*/
+#contact .container {
+    display: block; /*removendo o flexbox para empilhar os itens verticalmente*/
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+form input,
+form textarea, 
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+textarea {
+       resize: none;
+       height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182C61;
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+
+}
+
+form button:hover {
+    background-color: #1a529b;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182C61;
+    }
+
+/*estilizando o rodapé*/
+footer {
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding-bottom: 14px 0;
+
+}
