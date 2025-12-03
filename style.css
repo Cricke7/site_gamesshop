@@ -15,6 +15,7 @@ header {
     position: sticky; /*mantendo o header fixo no topo da página ao rolar para baixo*/
     top: 0px;
     box-shadow: 9px 20px 5px rgba(0, 0, 0, .1); /*adicionando sombra ao header*/
+    z-index: 1000; /*garantindo que o header fique acima de outros elementos*/
     
 }
 
